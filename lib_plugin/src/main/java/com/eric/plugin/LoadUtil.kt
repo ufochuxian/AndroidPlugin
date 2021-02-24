@@ -1,4 +1,4 @@
-package com.eric.androidplugin
+package com.eric.plugin
 
 import android.content.Context
 import android.util.Log

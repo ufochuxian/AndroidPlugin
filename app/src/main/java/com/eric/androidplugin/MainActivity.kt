@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                 Log.v(TAG,"这是动态代理执行的方法，可以在这里加上一些自定义的逻辑")
 //                method.invoke(cardProxyPerson,args)
                 args[0] = "小红"
-                //这里使用反射的方式调用方法，需要将参数的对应上
+                //这里使用反射的方式调用方法，需要将参数的对应上,这里的方法就是"代理的接口对象"的方法，比如这里指的就是makeCard
                 method.invoke(cardProxyPerson,args[0])
             }) as ICard
         //这里使用jdk提供的Proxy对象可以实现动态代理方法，进行拦截做一些事情
